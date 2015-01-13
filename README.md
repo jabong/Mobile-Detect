@@ -1,3 +1,7 @@
+
+### This is a fork of the Mobile-Detection Library by [serbanghita](https://github.com/serbanghita) at [https://github.com/serbanghita/Mobile-Detect](https://github.com/serbanghita/Mobile-Detect)
+
+
 [![Build Status](https://travis-ci.org/serbanghita/Mobile-Detect.svg?branch=devel)](https://travis-ci.org/serbanghita/Mobile-Detect) [![Latest Stable Version](https://poser.pugx.org/mobiledetect/mobiledetectlib/v/stable.svg)](https://packagist.org/packages/mobiledetect/mobiledetectlib) [![Total Downloads](https://poser.pugx.org/mobiledetect/mobiledetectlib/downloads.svg)](https://packagist.org/packages/mobiledetect/mobiledetectlib) [![Daily Downloads](https://poser.pugx.org/mobiledetect/mobiledetectlib/d/daily.png)](https://packagist.org/packages/mobiledetect/mobiledetectlib) [![License](https://poser.pugx.org/mobiledetect/mobiledetectlib/license.svg)](https://packagist.org/packages/mobiledetect/mobiledetectlib)
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/serbanghita/Mobile-Detect?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
