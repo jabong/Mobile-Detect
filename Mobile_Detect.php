@@ -1338,4 +1338,36 @@ class Mobile_Detect
         //will receive the basic, C grade experience.
         return self::MOBILE_GRADE_C;
     }
+    
+    /**
+     * Device meta information
+     * 
+     * @return array
+     */
+    public static function getDeviceMetaInformation() 
+    {
+        $aDeviceInfo = array();
+        $metaHeader = Jade_Array::getValueByKey($_SERVER, 'HTTP_X_ROCKET_MOBAPI_DEVICE_META');
+        if (!empty($metaHeader)) {
+            $aDeviceMeta = array(
+                'device_id',
+                'device_name',
+                'device_connection',
+                'device_os_version',
+            );
+            $counter = 0;
+            $aDeviceMetaCount = count($aDeviceMeta);
+            if (!empty($metaHeader)) {
+                $aMetaHeader = explode('|', $metaHeader);
+                foreach ($aMetaHeader as $key => $meta) {
+                    if ($counter < $aDeviceMetaCount) {
+                        $aDeviceInfo[$aDeviceMeta[$key]] = $meta;
+                        $counter++;
+                    }
+                }
+            }
+        }
+        return $aDeviceInfo;
+    }
+
 }
