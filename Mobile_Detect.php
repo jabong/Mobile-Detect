@@ -1349,7 +1349,9 @@ class Mobile_Detect
     public static function getDeviceMetaInformation() 
     {
         $aDeviceInfo = array();
-        $metaHeader = Jade_Array::getValueByKey($_SERVER, 'HTTP_X_ROCKET_MOBAPI_DEVICE_META');
+        $metaHeader = !empty($_SERVER['HTTP_X_ROCKET_MOBAPI_DEVICE_META'])
+            ? $_SERVER['HTTP_X_ROCKET_MOBAPI_DEVICE_META']
+            : '';
         if (!empty($metaHeader)) {
             $aDeviceMeta = array(
                 'device_id',
