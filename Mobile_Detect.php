@@ -1359,15 +1359,10 @@ class Mobile_Detect
                 'device_connection',
                 'device_os_version',
             );
-            $counter = 0;
-            $aDeviceMetaCount = count($aDeviceMeta);
-            if (!empty($metaHeader)) {
-                $aMetaHeader = explode('|', $metaHeader);
-                foreach ($aMetaHeader as $key => $meta) {
-                    if ($counter < $aDeviceMetaCount) {
-                        $aDeviceInfo[$aDeviceMeta[$key]] = $meta;
-                        $counter++;
-                    }
+            $aMetaHeader = explode('|', $metaHeader);
+            foreach ($aMetaHeader as $key => $meta) {
+                if (isset($aDeviceMeta[$key])) {
+                    $aDeviceInfo[$aDeviceMeta[$key]] = $meta;
                 }
             }
         }

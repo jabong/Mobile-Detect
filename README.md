@@ -1,4 +1,3 @@
-Taushif Copy ---
 ### This is a fork of the Mobile-Detection Library by [serbanghita](https://github.com/serbanghita) at [https://github.com/serbanghita/Mobile-Detect](https://github.com/serbanghita/Mobile-Detect)
 
 
